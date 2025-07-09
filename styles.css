@@ -1,0 +1,922 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: lightblue;
+
+}
+
+nav {
+    color: green;
+    background-color: #CC0000;
+    display: flex;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+nav li {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 5px ridge #378e8e;
+    display: flex;
+}
+
+a {
+    text-decoration: underline;
+    color: #2a513f;
+    font-weight: bold;
+    border: 5px ridge yellowgreen;
+    box-shadow: 5px 5px 5px blue;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: rebeccapurple;
+    text-decoration: none;
+    border: none;
+}
+
+nav a:active {
+    color: #378e8e;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px;
+    border: none;
+}
+
+img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.logo img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #CC0000;
+    color: green;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #2a513f;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    color: #2a513f;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+    color: #2a513f;
+    font-size: 1rem;
+}
+
+#flex-container-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 5px ridge #c7a008;
+    background-color: #3c5aa6;
+}
+
+#flex-container-banner img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #000;
+}
+
+header {
+    background-color: #FFDE00;
+    color: mediumblue;
+    border: 5px ridge yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    padding: 2rem;
+}
+
+#flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#flex-container-about-us {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    justify-items: center;
+    align-items: center;
+    border: 5px ridge #3c5aa6;
+    background-color: #5E99AE;
+
+}
+
+.flex-child1-history {
+    color: #2a513f;
+    font-family: Arial, serif;
+    font-weight: bold;
+    justify-content: center;
+    border: 5px ridge #FFDE00;
+    display: inline-flex;
+}
+
+#flex-container-our-clubs {
+    border: 5px ridge #3c5aa6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    background-color: #5E99AE;
+}
+
+.flex-child1-our-clubs {
+    color: #378e8e;
+    font-family: Arial, serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex-container-pokemon-images {
+    border: 5px ridge #B3A125;
+    display: flex;
+    color: #2a513f;
+    background-color: #FF0000;
+    font-family: Arial, serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#flex-container-pokemon-images img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #000;
+}
+
+footer {
+    background-color: #B3A125;
+    color: green;
+    border: 5px ridge yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+}
+
+footer p {
+    font-size: 1.25rem;
+    padding: 1rem;
+    justify-content: center;
+    border: 5px ridge #378e8e;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+img:active {
+    transform: scale(0.9);
+    color: #378e8e;
+}
+
+footer li {
+    display: inline-flex;
+    font-size: 1rem;
+    padding: 0.25rem;
+    justify-content: center;
+    border: 5px ridge #378e8e;
+    font-weight: bolder;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+/* Responsive Design */
+
+@media (max-width: 1600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+img {
+    width: 7rem;
+    height: 7rem;
+}
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 3.5rem;
+        text-align: center;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 1400px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 3rem;
+        text-align: center;
+        width: auto;
+    }
+}
+@media (max-width: 1300px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 2.75rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 6rem;
+        height: 6rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 2.5rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 2rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 960px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 2rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 940px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.75rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.5rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 830px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.25rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+
+@media (max-width: 808px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.25rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.75rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.5rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 3rem;
+        height: 3rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.5rem;
+        text-align: center;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 360px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.5rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1.25rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 280px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 1rem;
+        text-align: center;
+        width: auto;
+    }   
+}
+
+@media (max-width: 240px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 1rem;
+        height: 1rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flex-container-header {
+        font-size: 0.75rem;
+        text-align: center;
+        width: auto;
+    }   
+}
+
+@media (max-width: 200px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+     #flex-container-header {
+        font-size: 0.5rem;
+        text-align: center;
+        width:auto;
+    }   
+}
+
+@media (max-width: 160px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #flex-container-about-us,
+    #flex-container-our-clubs,
+    #flex-container-pokemon-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 0.25rem;
+        height: 0.25rem;
+    }
+    #flex-container-banner {
+        flex-direction: column;
+        align-items: center;
+}
+    #flex-container-header {
+        font-size: 0.25rem;
+        text-align: center;
+        width:auto;
+    }   
+}
+@media (max-width: 242px) {
+  #flex-container-header {
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 2px;
+  }
+  #flex-container-header h1,
+  #flex-container-header h2,
+  #flex-container-header p {
+    font-size: 0.8rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin: 2px 0;
+  }
+}
+
+@media (max-width: 142px) {
+  body, div, header, h1, h2, p, strong {
+    max-width: 100vw;
+    box-sizing: border-box;
+    font-size: 0.6rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin: 0;
+    padding: 1px;
+  }
+  img {
+    max-width: 80vw;
+    height: auto;
+  }
+}
+@media (max-width: 100px) {
+  body, div, header, h1, h2, p, strong {
+    max-width: 100vw;
+    box-sizing: border-box;
+    font-size: 0.4rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin: 0;
+    padding: 1px;
+  }
+  img {
+    max-width: 60vw;
+    height: auto;
+  }
+}
+/*max-width: 100vw; keeps content from overflowing.
+overflow-wrap: break-word; and word-break: break-word; force long words to wrap.
+Reduce font-size and padding for tiny screens.
+Set img to scale down.
+This will help all text and images stay inside their containers, even on very small screens.
+*/
